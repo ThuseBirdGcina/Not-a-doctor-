@@ -1,7 +1,7 @@
 /* ✅ General Styles */
 body {
   font-family: 'Special Elite', sans-serif;
-  background-color: #f5e6da;
+  background-color: #eff0ea;
   color: #000000;
   margin: 0;
   padding: 0;
@@ -52,20 +52,22 @@ nav ul li a:hover {
 
 /* ✅ Hero Section */
 #hero {
-  background: url('assets/images/hero-banner.jpg') no-repeat center center/cover;
+  background: url('assets/images/bg.jpg') no-repeat center center/cover;
   height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 60px;
   text-align: center;
-  color: rgb(102, 0, 78);
+  color: rgb(2, 138, 61);
+  font-size: 68;
+  /* text-emphasis: ; */
 }
 
 /* ✅ Hero Image Cropping (Paste under #hero section) */
 .hero-image {
-  width: 100%;
+  width: 60%;
   height: 60vh;
   object-fit: cover;
   object-position: center;
