@@ -1,0 +1,316 @@
+/* ✅ General Styles */
+body {
+  font-family: 'Special Elite', sans-serif;
+  background-color: #f5e6da;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+/* ✅ General Image Styling (Place this right after body styles) */
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* ✅ Navigation */
+nav {
+  background-color: #396d79;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  padding: 10px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #ffdba4;
+}
+
+/* ✅ Hero Section */
+#hero {
+  background: url('assets/images/hero-banner.jpg') no-repeat center center/cover;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  color: rgb(102, 0, 78);
+}
+
+/* ✅ Hero Image Cropping (Paste under #hero section) */
+.hero-image {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+#hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.custom-paragraph {
+  font-style:oblique;
+  color: #004e22; /* Change this to your desired color */
+}
+#hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font: color adjust #0d4800;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
+/* ✅ Buttons */
+.btn-primary,
+.btn-secondary {
+  display: inline-block;
+  padding: 12px 20px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+  margin: 5px;
+}
+
+.btn-primary {
+  background-color: #94a5a9;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #d8a99b;
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background-color: white;
+  color: #9b695f;
+  border: 1px solid #9b695f;
+}
+
+.btn-secondary:hover {
+  background-color: #e6ac8a;
+}
+
+/* ✅ About Section */
+#about {
+  padding: 50px 20px;
+  background-color: #ffffff;
+}
+
+#about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#about ul {
+  list-style: none;
+  padding: 0;
+}
+
+#about ul li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* ✅ Services Section */
+#services {
+  padding: 50px 20px;
+  background-color: #f5e6da;
+}
+
+/* ✅ Service Image Cropping (Paste under #services section) */
+.service img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  object-position: left;
+  border-radius: 10px;
+}
+
+#services h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.service-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ Accordion (Pricing Section) */
+.accordion {
+  background-color: #94a5a9;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.accordion:hover {
+  background-color: #d8a99b;
+}
+
+.panel {
+  display: none;
+  padding: 15px;
+  width: 90%;
+  max-width: 400px;
+  background-color: white;
+  margin-top: 5px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ Gallery Section */
+#gallery {
+  padding: 50px 20px;
+  background-color: white;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  padding: 10px;
+}
+
+.gallery-container img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: right;
+  border-radius: 8px;
+
+}
+
+.gallery-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+}
+
+/* ✅ Testimonials */
+#testimonials {
+  padding: 50px 20px;
+  background-color: #f5e6da;
+}
+
+/* ✅ Testimonial Image Cropping (Paste under #testimonials section) */
+.testimonial img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.testimonial-slider {
+  display: flex;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.testimonial {
+  flex: 0 0 100%;
+  padding: 20px;
+  text-align: center;
+  font-style: italic;
+}
+
+/* ✅ Offers Section */
+#offers {
+  padding: 50px 20px;
+  background-color: white;
+}
+
+.offer {
+  background-color: #f5e6da;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* ✅ Contact Section */
+#contact {
+  padding: 50px 20px;
+  background-color: #ffffff;
+}
+
+#contact a {
+  color: #396d79;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* ✅ Footer */
+footer {
+  background-color: #735b4f;
+  color: white;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+footer a {
+  color: #ffdba4;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
